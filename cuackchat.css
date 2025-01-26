@@ -1,6 +1,6 @@
 * {
   font-family: var(--font_text);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: black;
 }
@@ -17,17 +17,7 @@
 
 #navbar {
   z-index: 1;
-  margin: 30px 0 0 30px;
-}
-
-.header {
-  position: relative;
-}
-
-.header__container {
-  position: absolute;
-  top: 150px;
-  left: 80px;
+  margin: 30px 0 0 10px;
 }
 
 #title {
@@ -35,40 +25,71 @@
   font-weight: 900;
   color: var(--title);
   font-size: 55px;
-  margin-right: 80px;
 }
 
 .header__subtitle {
-  font-family: var(--font_subtitle);
   color: var(--subtitle);
   font-weight: 700;
   font-size: 32px;
 }
 
-.row__header-button {
-  max-width: 150px;
-}
-
-.header__button {
-  padding: 15px;
+#btn-create__profile {
   background-color: #ff3131;
   border: none;
-  border-radius: 50px;
   color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .header__duck {
+  min-width: 50px;
+}
+
+.about {
+  background-image: url(./fondo-black.png);
+  background-repeat: no-repeat;
+}
+
+.about__pato {
   min-width: 150px;
 }
 
-.header__background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
+.about__subtitle {
+  color: var(--subtitle);
+  font-weight: 700;
+  font-size: 32px;
 }
 
-@media screen and (max-width: 576px) {
-  .header__background {
-  }
+.top__subtitle {
+  font-family: var(--font_subtitle);
+  color: var(--subtitle);
+  font-weight: 700;
+}
+
+.top__subtitle {
+  font-family: var(--font_text);
+  color: var(--subtitle);
+}
+
+.top__image {
+  max-width: 250px;
+  height: 250px;
+  object-fit: contain;
+  align-self: center;
+}
+
+.top__like {
+  cursor: pointer;
+}
+
+.form__profile {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form__profile-title {
+  font-family: var(--font_text);
+  color: var(--subtitle);
+  font-size: 32px;
+  text-align: center;
 }
