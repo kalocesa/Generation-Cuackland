@@ -31,7 +31,7 @@
                             <a class="nav-link" href="#iniciar-sesion">Iniciar Sesión</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Crear tu pato></a>
+                            <a class="nav-link" href="#crea-pato">Crear tu pato</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Paquetes</a>
@@ -227,16 +227,34 @@
                 <button type="submit" class="btn btn-primary">Entrar</button>
             </form>
         </section>
-        <section>
+        <section class="mt-5 mb-5">
             <form id="crea-pato">
                 <fieldset>
-                    <legend>Crea tu pato</legend>
+                    <legend class="make__subtitle">Crea tu pato</legend>
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre</label>
                         <input type="text" id="name" class="form-control" placeholder="Ejemplo: 'Juancho' ">
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-sm-4">
+                            <div class="mb-3">
+                                <label for="disabledSelect" class="form-label">Color</label>
+                                <select id="disabledSelect" class="form-select">
+                                    <option value=""></option>
+                                    <option value="yellow">Amarillo</option>
+                                    <option value="blue">Azul</option>
+                                    <option value="green">Verde</option>
+                                    <option value="pink">Rosa</option>
+                                    <option value="red">Rojo</option>
+                                    <option value="purple">Morado</option>
+                                    <option value="black">Negro</option>
+                                    <option value="white">Blanco</option>
+                                    <option value="orange">Naranja</option>
+                                    <option value="brown">Café</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col col-sm-4">
                             <div class="mb-3">
                                 <label for="disabledSelect" class="form-label">Disfraz</label>
                                 <select id="disabledSelect" class="form-select">
@@ -254,7 +272,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-4">
                             <div class="mb-3">
                                 <label for="disabledSelect" class="form-label">Personalidad</label>
                                 <select id="disabledSelect" class="form-select">
@@ -272,7 +290,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-4">
                             <div class="mb-3">
                                 <label for="disabledSelect" class="form-label">Detalles</label>
                                 <select id="disabledSelect" class="form-select">
@@ -290,7 +308,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-4">
                             <div class="mb-3">
                                 <label for="disabledSelect" class="form-label">Accesorios</label>
                                 <select id="disabledSelect" class="form-select">
@@ -308,7 +326,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-4">
                             <div class="mb-3">
                                 <label for="disabledSelect" class="form-label">Habilidades</label>
                                 <select id="disabledSelect" class="form-select">
@@ -327,91 +345,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="amarillo" name="color">
-                                    <label class="form-check-label" for="amarillo">
-                                        Amarillo
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="azul" name="color">
-                                    <label class="form-check-label" for="azul">
-                                        Azul
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="verde" name="color">
-                                    <label class="form-check-label" for="verde">
-                                        Verde
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="rosa" name="color">
-                                    <label class="form-check-label" for="rosa">
-                                        Rosa
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="rojo" name="color">
-                                    <label class="form-check-label" for="rojo">
-                                        Rojo
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="morado" name="color">
-                                    <label class="form-check-label" for="morado">
-                                        Morado
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="negro" name="color">
-                                    <label class="form-check-label" for="negro">
-                                        Negro
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" id="blanco" name="color">
-                                    <label class="form-check-label" for="blanco">
-                                        Blanco
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </fieldset>
             </form>
         </section>

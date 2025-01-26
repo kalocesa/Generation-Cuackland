@@ -93,3 +93,10 @@
   font-size: 32px;
   text-align: center;
 }
+
+.make__subtitle {
+  font-family: var(--font_text);
+  color: var(--subtitle);
+  font-size: 32px;
+  text-align: center;
+}
